@@ -123,10 +123,10 @@ section{
     transform: translateY(-50%);
     max-width: 60rem;
 }
-.home .home-slider .content{
-    font-size: 5rem;
+.home .home-slider .content h3{
+    font-size: 6rem;
     color: #333;
-    padding: .7rem;
+    padding: .5rem;
 }
 .home .home-slider .content span{
     font-size: 3rem;
@@ -135,7 +135,7 @@ section{
 
 /* Auto play */
 
-.section_containe{
+.section_container{
     max-width: 1200px;
     margin:auto;
 }
@@ -149,8 +149,35 @@ section{
     display: flex;
     align-items: center;
     gap: 1rem;
-    animation: ;
+    animation: scroll 45s linear infinite;
+}
 
+.ins_flex img{
+    max-width: 135px;
+}
+@keyframes scroll{
+    to{
+        transform: translateX(calc(-50% - 0.5rem));
+    }
+}
+/*product**/
+.sell .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 2rem;
+}
 
+.sell .box-container .box{
+    position: relative;
+    text-align: center;
+    background-color: var(--white);
+    border-radius: 5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.sell .box-container .box .image{
+    height: 35rem;
+    width: 100%;
+    padding: 1.1rem;
 
 }
